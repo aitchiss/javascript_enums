@@ -28,9 +28,18 @@ var arrayTasks = {
 		return total
 	},
 
-	// findDuplicates: function (arr) {
-		
-	// },
+	findDuplicates: function (arr) {
+		var duplicates = []
+		var count = 0
+		arr.forEach(function(num){
+			var firstIndex = arr.indexOf(num)
+			var lastIndex = arr.lastIndexOf(num)
+			if (firstIndex !== lastIndex && duplicates.indexOf(num) === -1){
+				duplicates.push(num)
+			}
+		})
+		return duplicates
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 		

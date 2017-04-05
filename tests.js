@@ -25,10 +25,10 @@ describe('Array tasks', function () {
 		assert.equal(15, arrayTasks.sum(arr))
 	})
 
-	// it('should find duplicate values in an array, returning a new array of the duplicates', function () {
-	// 	var arr = [1, 2, 3, 4, 4, 5, 5, 5]
-	// 	assert.deepEqual([4, 5], arrayTasks.findDuplicates(arr))
-	// })
+	it('should find duplicate values in an array, returning a new array of the duplicates', function () {
+		var arr = [1, 2, 3, 4, 4, 5, 5, 5]
+		assert.deepEqual([4, 5], arrayTasks.findDuplicates(arr))
+	})
 
 	// it('should remove all instances of a value from an array, returning a new array', function () {
 	// 	var arr = [1, 2, 3, 1, 4, 5, 1]
