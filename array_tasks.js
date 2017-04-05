@@ -60,9 +60,16 @@ var arrayTasks = {
 		return indexes
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-		
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		var evenNums = []
+		arr.forEach(function(num){
+			if (num % 2 === 0){
+				evenNums.push(num)
+			}
+		})
+		var squared = this.square(evenNums)
+		return this.sum(squared)
+	}
 
 }
 
