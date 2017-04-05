@@ -14,9 +14,12 @@ var arrayTasks = {
 		return this.concat(leftSide, rightSide)
 	},
 
-	// square: function (arr) {
-		
-	// },
+	square: function (arr) {
+		var squaredArray = arr.map(function(num){
+			return num * num
+		})
+		return squaredArray
+	},
 
 	// sum: function (arr) {
 		

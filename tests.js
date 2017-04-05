@@ -15,10 +15,10 @@ describe('Array tasks', function () {
 		assert.deepEqual([1, 2, 3, 4], arrayTasks.insertAt(arr, 3, 2))
 	})
 
-	// it('should square all values in an array, returning a new array', function () {
-	// 	var arr = [1, 2, 3, 4, 5]
-	// 	assert.deepEqual([1, 4, 9, 16, 25], arrayTasks.square(arr))
-	// })
+	it('should square all values in an array, returning a new array', function () {
+		var arr = [1, 2, 3, 4, 5]
+		assert.deepEqual([1, 4, 9, 16, 25], arrayTasks.square(arr))
+	})
 
 	// it('should calculate the sum of all values in an array', function () {
 	// 	var arr = [1, 2, 3, 4, 5]
