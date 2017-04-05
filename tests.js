@@ -10,10 +10,10 @@ describe('Array tasks', function () {
 		assert.deepEqual(expectation, arrayTasks.concat(arr1, arr2))
 	})
 
-	// it('should insert an item in an array at any index position', function () {
-	// 	var arr = [1, 2, 4]
-	// 	assert.deepEqual([1, 2, 3, 4], arrayTasks.insertAt(arr, 3, 2))
-	// })
+	it('should insert an item in an array at any index position', function () {
+		var arr = [1, 2, 4]
+		assert.deepEqual([1, 2, 3, 4], arrayTasks.insertAt(arr, 3, 2))
+	})
 
 	// it('should square all values in an array, returning a new array', function () {
 	// 	var arr = [1, 2, 3, 4, 5]

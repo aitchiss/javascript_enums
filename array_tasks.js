@@ -4,9 +4,15 @@ var arrayTasks = {
 		return arr1.concat(arr2)
 	},
 
-	// insertAt: function (arr, itemToAdd, index) {
-		
-	// },
+	insertAt: function (arr, itemToAdd, index) {
+		//get two sliced arrays
+		var leftSide = arr.slice(0, index)
+		var rightSide = arr.slice(index, arr.length)
+		//add to end of first one
+		leftSide.push(itemToAdd)
+		//merge them back together
+		return this.concat(leftSide, rightSide)
+	},
 
 	// square: function (arr) {
 		
