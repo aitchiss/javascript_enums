@@ -21,9 +21,12 @@ var arrayTasks = {
 		return squaredArray
 	},
 
-	// sum: function (arr) {
-		
-	// },
+	sum: function (arr) {
+		var total = arr.reduce(function(total, num){
+			return total + num
+		})
+		return total
+	},
 
 	// findDuplicates: function (arr) {
 		
