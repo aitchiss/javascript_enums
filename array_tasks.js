@@ -30,7 +30,6 @@ var arrayTasks = {
 
 	findDuplicates: function (arr) {
 		var duplicates = []
-		var count = 0
 		arr.forEach(function(num){
 			var firstIndex = arr.indexOf(num)
 			var lastIndex = arr.lastIndexOf(num)
@@ -41,9 +40,15 @@ var arrayTasks = {
 		return duplicates
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-		
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		var newArray = []
+		arr.forEach(function(num){
+			if (num !== valueToRemove){
+				newArray.push(num)
+			}
+		})
+		return newArray
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 		
