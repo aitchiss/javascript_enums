@@ -50,9 +50,15 @@ var arrayTasks = {
 		return newArray
 	},
 
-	// findIndexesOf: function (arr, itemToFind) {
-		
-	// },
+	findIndexesOf: function (arr, itemToFind) {
+		var indexes = []
+		arr.forEach(function(num, index){
+			if (num === itemToFind){
+				indexes.push(index)
+			}
+		})
+		return indexes
+	},
 
 	// sumOfAllEvenNumbersSquared: function (arr) {
 		
